@@ -1,4 +1,15 @@
+## Intro Page
 ![Screenshot from 2024-07-05 12-30-59](https://github.com/harshitsingh20/ai-doc-master/assets/73012345/f628cd81-57f8-42b8-887b-9fffff40efac)
+
+## Home Page
+![Screenshot from 2024-07-05 15-16-49](https://github.com/harshitsingh20/ai-doc-master/assets/73012345/deac814b-bc62-48c0-ae40-34316d69d710)
+
+## Loging while searching story
+![Screenshot from 2024-07-05 15-19-13](https://github.com/harshitsingh20/ai-doc-master/assets/73012345/928ca356-4eeb-4f3e-bfb8-3f87d2da5221)
+
+## AI generated story
+![Screenshot from 2024-07-05 15-17-53](https://github.com/harshitsingh20/ai-doc-master/assets/73012345/e4e202f1-707d-4845-a934-f293ec9b30b4)
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -16,24 +27,55 @@ pnpm dev
 # or
 bun dev
 ```
+## Tech Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1) Next Js
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npx create-next-app@latest
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2) Prisma
 
-## Learn More
+```
+npm i prisma --save
 
-To learn more about Next.js, take a look at the following resources:
+# and
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npx prisma init
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# and
 
-## Deploy on Vercel
+npx prisma generate
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#and
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+npx prisma migerate dev
+
+```
+
+3) Neon (Postgres) Database
+
+4) Clerk (For Authentication)
+
+```
+npm install @clerk/nextjs
+```
+
+5) Shadch (For UI)
+
+```
+npx shadcn-ui@latest init
+```
+
+6) React Quill (For editing window)
+
+```
+npm install react-quill
+```
+
+7) Open AI (For grnerate the story Ai)
+
+```
+npm install --save openai
+```
